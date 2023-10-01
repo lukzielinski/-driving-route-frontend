@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.sidebar {
+    border-left: 1px solid black;
+    height: 100vh;
+    height: 100dvh;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 25px;
+}
+
+.row {
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid rgba(230, 230, 230, 0.141);
+    grid-template-columns: 20% 30% 30%;
+    font-size: 1.1rem;
+    margin: 10px 10px 10px 10px;
+    transition: background-color 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(36, 36, 36);
+    }
+}
+
+.list {
+    width: 100%;
+    height: calc(100vh - 85px);
+    font-size: 1.15rem;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar-track {
+    background-color: rgb(25, 25, 25);
+}
+
+.list::-webkit-scrollbar {
+    width: 3px;
+    background-color: rgb(142, 132, 132);
+}
+
+.list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(172, 172, 172, 0.38);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
